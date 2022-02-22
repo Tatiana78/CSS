@@ -1,3 +1,17 @@
+/* SELECTOR h1 atributo não tem sinal 
+COLOR é propriedades: a cor definida no caso RED é valor */
 h1 {
     color: red;
 }
+/* Atributo vai um ponto antes  */
+.segundo-h1 {
+    color: blue;
+}
+.terceiro-h1 {
+    color:blueviolet
+}    
+
+h2 {
+    color:black
+}
+/* As cores do CSS podem ter os atribultos body, h1, p {color: rgb} a {color: rgba}*/
