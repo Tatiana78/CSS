@@ -1,17 +1,29 @@
-/* SELECTOR h1 atributo não tem sinal 
-COLOR é propriedades: a cor definida no caso RED é valor */
+/* SELECTOR é o elemento que selecionamos para estilizar como o h1, body,
+PROPRIEDADES é o color / VALOR é a cor definida no caso red */
+
+
 h1 {
     color: red;
 }
-/* Atributo vai um ponto antes  */
+
+/* No CSS o atributo Id USAMOS # / o atributo Class USAMOS . */
+
 .segundo-h1 {
     color: blue;
 }
+
 .terceiro-h1 {
-    color:blueviolet
-}    
+    color:blueviolet;
+}   
+
+#quarto-h1 {
+    color: green;
+}  
+
 
 h2 {
-    color:black
+    color:black;
 }
-/* As cores do CSS podem ter os atribultos body, h1, p {color: rgb} a {color: rgba}*/
+
+/* A cor no CSS pode ter os atributos body: background e color,
+h1: color #00000, p: color: rgb(0,0,255), a: color rgba(0,0,255,0.6) */
