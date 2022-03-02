@@ -23,7 +23,10 @@ body {
 
     background-color: #333;
     color: #eee;
+    /* com todos px abaixo, não fica mais responsivo... width */
     width: 80%;
+    /* responsivo */
+    box-sizing: border-box;
     
     margin-top: 50px;
     margin-left: 50px;
