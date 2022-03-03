@@ -25,7 +25,7 @@ body {
     color: #eee;
     /* com todos px abaixo, não fica mais responsivo... width */
     width: 80%;
-    /* responsivo */
+    /* ficará responsivo com box-sizing */
     box-sizing: border-box;
     
     margin-top: 50px;
@@ -42,16 +42,17 @@ body {
     /* mesma coisa que acima */
     padding: 60px;
     
-    /* declarando dotted o efeito será pontilhado na borda */
+
     border-top: 15px solid red;
     border-left: 15px solid red;
     border-right: 15px solid red;
     border-bottom: 15px solid red;
     /* mesma coisa que acima */
     border: 15px solid rgb(0,0,255); 
+    /* declarando dotted o efeito será pontilhado na borda */
 }
 
-    /* referente ao h1s por estarem dentro body/sem ou declaração especificando */
+/* referente ao h1s por estarem dentro body/sem ou declaração especificando */
 h1 {
     color: red;
 }
@@ -72,8 +73,35 @@ h1 {
 
 
 h2 {
-    color:black;
+    color:black; 
+} 
+
+/* Links para redes sociais */
+.main-aside h2 {
+    text-align: center;
+}
+/* Efeito ao passar o mouse  */
+.main-aside h2:hover {
+    color: green;
+    /* cursor: pointer; */
 }
 
-/* A cor no CSS pode ter os atributos body: background e color,
-h1: color #00000, p: color: rgb(0,0,255), a: color rgba(0,0,255,0.6) */
+.main-aside ul {
+    /* Tira os pontos do link (square quadrado), centraliza as redes sociais e alinha  */
+    list-style: none; 
+    text-align: center;
+    padding: 0;
+}  
+    /* Tira o grifado das redes sociais e muda a cor da letra */
+.main-aside ul a {
+    text-decoration: none;
+    color: black;
+}
+/* Efeito ao passar o mouse */
+.main-aside ul a:hover {
+    color: red;
+} 
+/* Estiliza o link que foram visitados */
+.main-aside ul a:visited {
+    color: green; 
+} 
