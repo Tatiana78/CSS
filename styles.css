@@ -1,9 +1,12 @@
 /* SELECTOR é o elemento que selecionamos para estilizar como o h1, body,
 PROPRIEDADES é o color / VALOR é a cor definida no caso red */
 
+/* estilizarar todos elementos */
+* {
+    box-sizing: border-box;
+}
 /* BODY causa efeito em tudo está  dentro; fonts / 
 COR mudará se estiver declarado class ou id */
-
 body {
     color: blue;
     font-family: 'Roboto', sans-serif;
@@ -12,7 +15,6 @@ body {
     font-weight: bolder; */
     padding: 20px;
 }
-
 /* no HTML refere-se a div class container */
 .container {
     /* background-color: #333;
@@ -27,8 +29,8 @@ body {
     /* com todos px abaixo, não fica mais responsivo... width */
     width: 80%;
     /* ficará responsivo com box-sizing */
-    box-sizing: border-box;
-    
+    /* box-sizing: border-box; */
+
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
@@ -43,7 +45,6 @@ body {
     /* mesma coisa que acima */
     padding: 60px;
     
-
     border-top: 15px solid red;
     border-left: 15px solid red;
     border-right: 15px solid red;
@@ -76,12 +77,11 @@ h1 {
 h2 {
     color:black; 
 } 
-
-/* Links para redes sociais */
+/* Links para Redes Sociais */
 .main-aside h2 {
     text-align: center;
 }
-/* Efeito ao passar o mouse  */
+/* Efeito ao passar o mouse Redes Sociais */
 .main-aside h2:hover {
     color: green;
     /* cursor: pointer; */
@@ -102,10 +102,10 @@ h2 {
 .main-aside ul a:hover {
     color: red;
 } 
-/* Estiliza o link que foram visitados */
-.main-aside ul a:visited {
+/* Estiliza os links que foram visitados */
+ /* .main-aside ul a:visited {
     color: green; 
-} 
+} */
 
 /* Estilização do Formulário */
 .main-form {
@@ -116,8 +116,10 @@ h2 {
     padding-bottom: 10px;
 }
 
+/* se tirar .form-group estiliza tbm último botão */
 .main-form .form-group input {
     padding: 10px;
+    width: 100%;
 }
 
 .main-form .form-group label {
@@ -129,4 +131,9 @@ h2 {
     background-color: #333;
     color: #eee;
     border: none;
+}
+
+.box {
+    width: 80%;
+    margin: auto;
 }
